@@ -14,8 +14,6 @@ $token_grant_url = "https://login.microsoftonline.com/organizations/oauth2/v2.0/
 
 session_start();
 
-$_SESSION['state'] = session_id();
-
 echo "<br>";
 
 echo session_id();
