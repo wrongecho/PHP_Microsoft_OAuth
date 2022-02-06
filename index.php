@@ -115,9 +115,9 @@ if (isset($_POST['code']) && $_POST['state'] == session_id()){
         header ('Location: https://samplesite.loc');
     }
     else{
-        echo "Error getting access_token / state did not match";
+        echo "Error getting access_token";
     }
-
+    
 }
 
 if ($_GET['action'] == 'logout'){
@@ -128,5 +128,4 @@ if ($_GET['action'] == 'logout'){
     session_destroy();
 
     header ('Location: https://samplesite.loc');
-
 }
